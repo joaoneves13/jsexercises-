@@ -19,3 +19,4 @@ if (age >= 18) {
     {console.log("child")}
 
 console.log(age)
+
