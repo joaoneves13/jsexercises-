@@ -18,25 +18,28 @@ const employer3 ={
 }
 const findFormOfAddress = function (employer) {
     if (employer.title === "King" || employer.title === "Queen"){
-            console.log("Your Majesty");
+            return "Your Majesty"
     }   else if (employer.title === "Prince" || employer.title === "Princess"){
-            console.log("Your Royal Highness");
+            return "Your Royal Highness"
     }   else if (employer.title === "Duke" || employer.title === "Duchess" ){
-            console.log ("Your Grace");
+            return "Your Grace"
     }   else if (employer.title === "Baronet" || employer.title === "Knight"){
-            console.log (`Sir ${first_name}`);
+            return `Sir ${first_name}`
     }   else if (employer.title === "Dame"){
-            console.log (`Dame ${first_name}`)
+            return `Dame ${first_name}`
     }   else 
             if (employer.gender === "female"){
-                console.log(`Lady ${employer.last_name}`)
+                return `Lady ${employer.last_name}`
             }  else {
-                console.log(`Lord ${employer.last_name}`)
+                return `Lord ${employer.last_name}`
             }
 }
 
+const adress = findFormOfAddress(employer)
+    console.log(adress)
 
-findFormOfAddress(employer);
-findFormOfAddress(employer2);
-findFormOfAddress(employer3);
+const adress2 = findFormOfAddress(employer2)
+    console.log(adress2)
 
+const adress3 = findFormOfAddress(employer3)
+    console.log(adress3)
